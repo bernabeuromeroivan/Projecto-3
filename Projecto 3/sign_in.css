@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1440px;
+  border: 1px solid black;
+}
+
+.encabezado {
+  display: flex;
+  gap: 215px;
+  padding: 20px;
+  align-items: center;
+}
+
+.formulario{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.titulo{
+    font-family: 'SF Pro Display';
+}
+
+.relleno{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.email{
+   width: 400px; 
+}
