@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SF Pro Display";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 1440px;
+}
+
+.encabezado {
+  display: flex;
+  gap: 215px;
+  padding: 20px;
+  align-items: center;
+}
+
+.formulario {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border-radius: 4px;
+}
+
+label {
+  font-family: "SF Pro Display";
+  margin: 15px 0 4px 0;
+}
+
+.sign_in{
+  display: flex;
+}
+
+.signed{
+  color: #4F4F4F;
+}
+
+.sign_in .contraseña{
+  margin-left: 150px;
+}
+
+.contraseña a{
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.boton{
+  width: 400px;
+  height: 40px;
+  background-color: #2f80ed;
+  padding: 12px 18px 12px 18px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.linea{
+  width: 400px;
+  margin-top: 20px;
+}
+
+.texto_linea{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.texto_linea p{
+  color: #4F4F4F;
+  margin-top: -12px;
+  background-color: white;
+  width: 200px;
+  padding: 0 10px 0 10px;
+}
+
+.boton_google{
+  width: 400px;
+  height: 40px;
+  background-color: white;
+  color: #4F4F4F;
+  border: 1px solid #E0E0E0;
+  border-radius: 6px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.boton_google img{
+  margin-right: 10px;
+}
+
+.boton_facebook{
+  width: 400px;
+  height: 40px;
+  background-color: #475993;
+  color: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 6px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.boton_facebook img{
+  margin-right: 10px;
+}
+
+.registro{
+  margin-top: 30px;
+  font-family: "SF Pro Display";
+  color: #4F4F4F;
+  display: flex;
+}
+
+.registro .registrar{
+  margin-left: 8px;
+}
+
+.registrar a{
+  text-decoration: none;
+  color: #2F80ED;
+}
+
+
