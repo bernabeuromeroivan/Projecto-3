@@ -6,11 +6,11 @@
 body {
   display: flex;
   justify-content: center;
+  font-family: "SF Pro Display";
 }
 
 .container {
   width: 1440px;
-  border: 1px solid black;
 }
 
 .encabezado {
@@ -62,6 +62,15 @@ body {
   cursor: pointer;
 }
 
+.inicio_sesion a {
+  text-decoration: none;
+  color: white;
+}
+.registrar a{
+  text-decoration: none;
+  color: #2f80ed;
+}
+
 .imagen_texto img {
   width: 1240px;
   height: 500px;
@@ -73,6 +82,120 @@ body {
   padding-top: 20px;
 }
 
-.inicio_sesion{
-    color: white;
+.titulo_dentro {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: -350px;
+  color: white;
+  font-weight: 700;
+  line-height: 100%;
+  font-size: 32px;
+}
+
+.texto_dentro {
+  text-align: center;
+  width: 650px;
+  margin-left: 400px;
+  margin-top: 20px;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.formulario {
+  gap: 16px;
+  width: 1030px;
+  margin: 0 auto;
+  padding-top: 40px;
+  margin-top: 130px;
+}
+
+.where {
+  width: 260px;
+  height: 43px;
+  border-radius: 4px;
+  padding-top: 11px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  gap: 10px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.check {
+  width: 170px;
+  height: 43px;
+  border-radius: 4px;
+  padding-top: 11px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  gap: 10px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.check_out {
+  width: 170px;
+  height: 43px;
+  border-radius: 4px;
+  padding-top: 11px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  gap: 10px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.guests {
+  width: 210px;
+  height: 43px;
+  border-radius: 4px;
+  padding-top: 11px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  gap: 10px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.boton_form {
+  width: 148px;
+  height: 44px;
+  border-radius: 6px;
+  padding-top: 12px;
+  padding-right: 18px;
+  padding-bottom: 12px;
+  padding-left: 18px;
+  gap: 10px;
+  background-color: #2f80ed;
+  border: none;
+}
+
+.texto_fa {
+  margin-top: 40px;
+  margin-left: 100px;
+  background-color: #FCEFCA;
+  width: 1240px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+
+.texto_fa img{
+  margin-left: 20px;
+}
+
+.texto_fa p{
+  margin-left: 20px;
+  color: #333333;
+}
+
+.texto_fa p a{
+  text-decoration: none;
+  color: #2f80ed;
 }

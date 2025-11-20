@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projecto 3</title>
+    <title>Home</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.cdnfonts.com/css/sf-pro-display"
@@ -27,15 +27,31 @@
             </ul>
           </div>
           <div class="botones">
-            <button class="registrar">Register</button>
-            <button class="inicio_sesion"><a href="Sign In/sign_in.html">Sign In</a></button>
+            <button class="registrar"><a href="registrar.html">Register</a></button>
+            <button class="inicio_sesion"><a href="sign_in.html">Sign In</a></button>
           </div>
         </div>
       </header>
-      <div>
-        <div class="imagen_texto">
-          <img src="imagenes/Rectangle 2.svg" alt="imagen_texto" />
-        </div>
+      <div class="imagen_texto">
+        <img src="imagenes/Rectangle 2.svg" alt="imagen_texto" />
+        <h2 class="titulo_dentro">Enjoy Your Dream Vacation</h2>
+        <p class="texto_dentro">
+          Plan and book our perfect trip with expert advice, travel tips,
+          destination information and inspiration from us
+        </p>
+      </div>
+      <div class="formulario">
+        <form action="">
+          <input type="text" placeholder="Where do you want to go?" class="where"/>
+          <input type="text" placeholder="Check in date" class="check"/>
+          <input type="text" placeholder="Check out date" class="check_out"/>
+          <input type="text" placeholder="Guests" class="guests"/>
+          <button class="boton_form">Search</button>
+        </form>
+      </div>
+      <div class="texto_fa">
+        <img src="imagenes/danger 1.svg" alt="Danger">
+        <p>Check the latest COVID-19 restrictions before you travel. <a href="">Learn more</a></p>
       </div>
     </div>
   </body>

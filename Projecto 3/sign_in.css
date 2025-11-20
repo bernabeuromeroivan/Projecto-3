@@ -42,12 +42,23 @@ label {
   margin: 15px 0 4px 0;
 }
 
+input{
+  height: 44px;
+  background-color: #F2F2F2;
+  border: none;
+}
+
 .sign_in{
   display: flex;
 }
 
-.signed{
+.sign_in label{
   color: #4F4F4F;
+  margin-top: -20px;
+}
+
+.signed_in label{
+  margin-top: 10px;
 }
 
 .sign_in .contraseña{
