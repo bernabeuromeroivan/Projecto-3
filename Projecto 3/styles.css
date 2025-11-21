@@ -66,7 +66,7 @@ body {
   text-decoration: none;
   color: white;
 }
-.registrar a{
+.registrar a {
   text-decoration: none;
   color: #2f80ed;
 }
@@ -179,41 +179,112 @@ body {
 .texto_fa {
   margin-top: 40px;
   margin-left: 100px;
-  background-color: #FCEFCA;
+  background-color: #fcefca;
   width: 1240px;
   height: 72px;
   display: flex;
   align-items: center;
 }
 
-.texto_fa img{
+.texto_fa img {
   margin-left: 20px;
 }
 
-.texto_fa p{
+.texto_fa p {
   margin-left: 20px;
   color: #333333;
 }
 
-.texto_fa p a{
+.texto_fa p a {
   text-decoration: none;
   color: #2f80ed;
 }
 
-.texto_enjoy{
+.texto_enjoy {
   margin-left: 100px;
   margin-top: 50px;
 }
 
-.texto_enjoy h2{
+.texto_enjoy h2 {
   font-size: 28px;
   font-weight: 600;
   color: #181818;
 }
 
-.texto_enjoy p{
+.texto_enjoy p {
   margin-top: 20px;
   width: 610px;
   color: #333333;
   font-size: 16px;
+}
+
+.texto_debajo_img {
+  display: flex;
+}
+
+.imagenes_debajo {
+  margin-top: 30px;
+  display: flex;
+  margin-left: 100px;
+  gap: 20px;
+}
+
+.imagenes_debajo h3 {
+  margin-top: 10px;
+}
+
+.inspiration {
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.inspiration_img {
+  display: flex;
+  margin-left: 100px;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.inspiration_img h3 {
+  margin-top: -130px;
+  margin-left: 20px;
+  width: 360px;
+  color: white;
+  font-weight: 600;
+}
+
+.inspiration_img p {
+  margin-left: 20px;
+  width: 360px;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 140%;
+  color: white;
+  letter-spacing: 2%;
+}
+
+.popular {
+  margin-left: 100px;
+}
+
+.popular h2 {
+  margin-top: 60px;
+}
+
+.img_popular {
+  margin-left: 100px;
+  display: flex;
+  gap: 20px;
+}
+
+.img_popular img {
+  margin-top: 20px;
+}
+
+.img_popular h3 {
+  margin-top: 10px;
+}
+
+.img_popular p {
+  margin-top: 10px;
 }
