@@ -288,3 +288,18 @@ body {
 .img_popular p {
   margin-top: 10px;
 }
+
+.parte_abajo {
+  margin-left: 100px;
+  margin-top: 60px;
+}
+
+.parte_abajo h2 {
+  margin-left: 70px;
+  margin-top: -200px;
+}
+
+.parte_abajo img {
+  width: 1240px;
+  height: 400px;
+}
