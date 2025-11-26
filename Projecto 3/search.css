@@ -14,6 +14,7 @@ body {
 }
 
 .encabezado {
+  display: flex;
   justify-content: center;
   gap: 215px;
   padding: 20px;
@@ -22,8 +23,8 @@ body {
   height: 200px;
 }
 
-.logo {
-  margin-left: 100px;
+.contenido_header{
+  display: flex;
 }
 
 .lista {
@@ -33,10 +34,87 @@ body {
   list-style: none;
   font-size: 16px;
   font-family: "SF Pro Display";
-  margin-top: -26px;
+}
+
+.foto{
+  width: 44px;
+  height: 44px;
+}
+
+.notificacion{
+  width: 24px;
+  height: 24px;
 }
 
 .lista a {
   text-decoration: none;
+  color: white;
+}
+
+.formulario {
+  gap: 16px;
+  width: 1030px;
+  margin: 0 auto;
+  padding-top: 40px;
+  margin-top: -60px;
+}
+
+.where {
+  width: 260px;
+  height: 43px;
+  border-radius: 4px;
+  gap: 10px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.check {
+  width: 170px;
+  height: 43px;
+  border-radius: 4px;
+  gap: 10px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.check_out {
+  width: 170px;
+  height: 43px;
+  border-radius: 4px;
+  gap: 10px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+}
+
+.guests {
+  width: 210px;
+  height: 43px;
+  border-radius: 4px;
+  gap: 10px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.formulario input {
+  padding-left: 30px;
+  z-index: 2;
+}
+
+.formulario img {
+  margin-right: -20px;
+  z-index: 1;
+}
+
+.boton_form {
+  width: 148px;
+  height: 44px;
+  border-radius: 6px;
+  background-color: #2f80ed;
+  border: none;
   color: white;
 }
