@@ -334,3 +334,63 @@ body {
   cursor: pointer;
   font-family: 'SF Pro Display';
 }
+
+.sub_footer{
+  margin-top: 80px;
+  text-align: center;
+}
+
+.sub_footer p{
+  margin-top: 20px;
+  color: #2f80ed;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.lista_abajo{
+  margin-left: 90px;
+  flex-direction: column;
+  display: flex;
+  margin-top: 50px;
+  list-style: none;
+  line-height: 30px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;     
+}
+
+.lista_abajo img{
+  width: 159px;
+  height: 24px;
+}
+
+.lista_abajo span{
+  width: 197px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.listas_footer{
+  display: flex;
+  gap: 40px;
+}
+
+.lista_abajo a{
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+footer{
+  text-align: end;
+  padding-top: 15px;
+  margin-top: 40px;
+  padding-bottom: 15px;
+  background-color: #EBEBEB;
+  margin-left: -232px;
+  margin-right: -232px;
+  padding-right: 300px;
+  font-size: 14px;
+  color: #4F4F4F;
+}
