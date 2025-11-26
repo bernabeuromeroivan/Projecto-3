@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "SF Pro Display";
+}
+
+.container {
+  width: 1440px;
+}
+
+.encabezado {
+  justify-content: center;
+  gap: 215px;
+  padding: 20px;
+  background-color: #2969bf;
+  width: 1440px;
+  height: 200px;
+}
+
+.logo {
+  margin-left: 100px;
+}
+
+.lista {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  list-style: none;
+  font-size: 16px;
+  font-family: "SF Pro Display";
+  margin-top: -26px;
+}
+
+.lista a {
+  text-decoration: none;
+  color: white;
+}

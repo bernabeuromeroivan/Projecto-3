@@ -24,6 +24,7 @@ body {
 .lista {
   display: flex;
   justify-content: center;
+  align-items: cent;
   gap: 48px;
   list-style: none;
   font-size: 16px;
