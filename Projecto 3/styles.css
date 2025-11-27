@@ -105,11 +105,22 @@ body {
 }
 
 .formulario {
-  gap: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 1030px;
+  height: 64px;
   margin: 0 auto;
-  padding-top: 40px;
-  margin-top: 130px;
+  gap: 10px;
+  border-radius: 8px;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 37px 0px #00000026;
+  position: relative;
+  top: 170px;
 }
 
 .where {
@@ -117,63 +128,89 @@ body {
   height: 43px;
   border-radius: 4px;
   gap: 10px;
-  border: none;
   background-color: #f2f2f2;
+  border: none;
+  padding-left: 40px;
+  box-sizing: border-box;
 }
 
-.check {
-  width: 170px;
-  height: 43px;
-  border-radius: 4px;
-  gap: 10px;
-  border: none;
-  background-color: #f2f2f2;
-}
-
-.check_out {
+.date {
   width: 170px;
   height: 43px;
   border-radius: 4px;
   gap: 10px;
   background-color: #f2f2f2;
   border: none;
+  padding-left: 40px;
+  box-sizing: border-box;
 }
 
-.form {
-  display: flex;
+.date_final {
+  width: 170px;
+  height: 43px;
+  border-radius: 4px;
   gap: 10px;
+  background-color: #f2f2f2;
+  border: none;
+  padding-left: 40px;
+  box-sizing: border-box;
 }
 
-.guests {
+.users {
   width: 210px;
   height: 43px;
   border-radius: 4px;
   gap: 10px;
   background-color: #f2f2f2;
   border: none;
+  padding-left: 40px;
+  box-sizing: border-box;
 }
 
-.formulario input {
-  padding-left: 30px;
-  z-index: 2;
-}
-
-.formulario img {
-  margin-right: -20px;
-  z-index: 1;
-}
-
-.boton_form {
+.buscar {
   width: 148px;
   height: 44px;
-  border-radius: 6px;
   background-color: #2f80ed;
+  color: #ffffff;
   border: none;
-  color: white;
+  border-radius: 6px;
+  gap: 10px;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.location,
+.user,
+.calendar2,
+.calendar1 {
+  width: 20px;
+  height: 20px;
+}
+
+.user {
+  position: absolute;
+  left: 660px;
+}
+
+.location {
+  position: absolute;
+  left: 30px;
+}
+
+.calendar1 {
+  position: absolute;
+  left: 300px;
+}
+
+.calendar2 {
+  position: absolute;
+  left: 480px;
 }
 
 .texto_fa {
-  margin-top: 40px;
+  margin-top: 250px;
   margin-left: 100px;
   background-color: #fcefca;
   width: 1240px;
@@ -290,18 +327,18 @@ body {
   margin-top: 60px;
 }
 
-.gen_popular{
+.gen_popular {
   margin-bottom: 40px;
 }
 
-.mano{
+.mano {
   width: 730px;
   margin-left: 500px;
   rotate: -15deg;
   margin-top: -290px;
 }
 
-.playa_mobil{
+.playa_mobil {
   height: 280px;
   width: 1240px;
   margin-left: 100px;
@@ -313,7 +350,7 @@ body {
   border-radius: 8px;
 }
 
-.playa_mobil h2{
+.playa_mobil h2 {
   color: white;
   width: 580px;
   font-weight: 600;
@@ -322,7 +359,7 @@ body {
   margin-left: 70px;
 }
 
-.boton_playa{
+.boton_playa {
   width: 200px;
   height: 44px;
   border-radius: 6px;
@@ -333,22 +370,22 @@ body {
   margin-top: 20px;
   font-size: 15px;
   cursor: pointer;
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
 }
 
-.sub_footer{
+.sub_footer {
   margin-top: 80px;
   text-align: center;
 }
 
-.sub_footer p{
+.sub_footer p {
   margin-top: 20px;
   color: #2f80ed;
   font-weight: 400;
   font-size: 16px;
 }
 
-.lista_abajo{
+.lista_abajo {
   margin-left: 90px;
   flex-direction: column;
   display: flex;
@@ -357,15 +394,15 @@ body {
   line-height: 30px;
   margin-bottom: 10px;
   font-size: 14px;
-  font-weight: 400;     
+  font-weight: 400;
 }
 
-.lista_abajo img{
+.lista_abajo img {
   width: 159px;
   height: 24px;
 }
 
-.lista_abajo span{
+.lista_abajo span {
   width: 197px;
   font-size: 14px;
   font-weight: 400;
@@ -373,25 +410,25 @@ body {
   margin-left: 30px;
 }
 
-.listas_footer{
+.listas_footer {
   display: flex;
   gap: 40px;
 }
 
-.lista_abajo a{
+.lista_abajo a {
   text-decoration: none;
   color: #2f80ed;
 }
 
-footer{
+footer {
   text-align: end;
   padding-top: 15px;
   margin-top: 40px;
   padding-bottom: 15px;
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   margin-left: -232px;
   margin-right: -232px;
   padding-right: 300px;
   font-size: 14px;
-  color: #4F4F4F;
+  color: #4f4f4f;
 }
