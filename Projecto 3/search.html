@@ -1,53 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Search Results</title>
-    <link rel="stylesheet" href="search.css">
-        <link
+    <link rel="stylesheet" href="search.css" />
+    <link
       href="https://fonts.cdnfonts.com/css/sf-pro-display"
       rel="stylesheet"
     />
-</head>
-<body>
-    <div>
-    <header>                        
+  </head>
+  <body>
+    <div class="container">
+      <header>
         <div class="encabezado">
-            <div class="logo">
-                <img src="imagenes/logo_blanco.svg" alt="Logo" />
-            </div>
-            <div class="contenido_header">
-                <ul class="lista">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Discover</a></li>
-                    <li><a href="">Activities</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </div>
-            <div class="icono">
-                <img class="notificacion" src="imagenes/notificacion.svg" alt="Notificacion">
-                <img class="foto" src="imagenes/icono.svg" alt="Icono">
-            </div>
+          <div class="logo">
+            <img src="imagenes/logo_blanco.svg" alt="Logo" />
+          </div>
+          <div class="contenido_header">
+            <ul class="lista">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="">Discover</a></li>
+              <li><a href="">Activities</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="icono">
+            <img
+              class="notificacion"
+              src="imagenes/notificacion.svg"
+              alt="Notificacion"
+            />
+            <img class="foto" src="imagenes/icono.svg" alt="Icono" />
+          </div>
         </div>
         <div class="formulario">
-            <form class="form">
-                <img src="imagenes/location.svg" alt="Location" />
-            <input
+          <input
             type="text"
-            placeholder="Where do you want to go?"
+            placeholder="Where are you going?"
             class="where"
+          /><img
+            src="imagenes-pagina-principal/location.png"
+            alt="location"
+            class="location"
           />
-          <img src="imagenes/calendar.png" alt="Mar 18, 2022" />
-          <input type="text" placeholder="Check in date" class="check" />
-          <img src="imagenes/calendar.png" alt="March 20, 2022" />
-          <input type="text" placeholder="Check out date" class="check_out" />
-          <img src="imagenes/user.svg" alt="" />
-          <input type="text" placeholder="Guests" class="2 adult, 1 room" />
-          <button class="boton_form">Search</button>
-        </form>
-      </div>   
-    </header>
-</body>
+          <input type="text" placeholder="Check in date" class="date" /><img
+            src="imagenes-pagina-principal/calendario.png"
+            alt="calendar1"
+            class="calendar1"
+          />
+          <input
+            type="text"
+            placeholder="Check out date"
+            class="date_final"
+          /><img
+            src="imagenes-pagina-principal/calendario.png"
+            alt="calendar2"
+            class="calendar2"
+          />
+          <input type="number" placeholder="Guests" class="users" /><img
+            src="imagenes-pagina-principal/user.png"
+            alt="Usuario"
+            class="user"
+          />
+          <button class="buscar">Search</button>
+        </div>
+      </header>
+      <div class="parte_izquierda">
+        <div class="search">
+          <h3>Search by property name</h3>
+          <input type="text" placeholder="eg. Beach westpalm" class="beach" />
+          <img class="lupa" src="imagenes/search.svg" alt="" />
+        </div>
+        <h2 class="filter">Filter by</h2>
+        <div class="budget">
+          <div>
+            <h3>Your budget per day</h3>
+          </div>
+          <div class="rango_precio">
+            <ul>
+              <li>
+                <input type="checkbox" id="remember" name="remember" />
+                <span>$ 0 - $ 200</span>
+              </li>
+              <li>
+                <input type="checkbox" id="remember" name="remember" />
+                <span>$ 200 - $ 500</span>
+              </li>
+              <li>
+                <input type="checkbox" id="remember" name="remember" />
+                <span>$ 500 - $ 1,000</span>
+              </li>
+              <li>
+                <input type="checkbox" id="remember" name="remember" />
+                <span>$ 1,000 - $ 2,000</span>
+              </li>
+              <li>
+                <input type="checkbox" id="remember" name="remember" />
+                <span>$ 2,000 - $ 5,000</span>
+              </li>
+            </ul>
+            <ul>
+              <li>200</li>
+              <li>100</li>
+              <li>15</li>
+              <li>12</li>
+              <li>230</li>
+            </ul>
+          </div>
+          <div class="rango_precio_abajo">
+            <span>Set your own budget</span>
+            <img src="imagenes/toogle.svg" alt="" />
+          </div>
+        </div>
+        <div class="rating">
+          <div>
+            <h3>Rating</h3>
+          </div>
+          <div class="container_rating">
+            <p class="show">Show only ratings more than</p>
+            <ul>
+              <div>
+                <li>1<img src="imagenes/estrella.svg" alt="" /></li>
+              </div>
+              <div>
+                <li>2<img src="imagenes/estrella.svg" alt="" /></li>
+              </div>
+              <div>
+                <li>3<img src="imagenes/estrella.svg" alt="" /></li>
+              </div>
+              <div>
+                <li>4<img src="imagenes/estrella.svg" alt="" /></li>
+              </div>
+              <div>
+                <li>5<img src="imagenes/estrella.svg" alt="" /></li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
