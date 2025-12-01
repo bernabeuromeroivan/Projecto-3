@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "SF Pro Display";
+}
+
+.container {
+  width: 1440px;
+  height: 2470px;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: center;
+  gap: 280px;
+  padding: 20px;
+  align-items: center;
+}
+
+.lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  list-style: none;
+  font-size: 16px;
+  font-family: "SF Pro Display";
+}
+
+.lista a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.foto {
+  width: 44px;
+  height: 44px;
+}
+
+.notificacion {
+  width: 24px;
+  height: 24px;
+}
+
+.foto_izquierda{
+  margin-left: 100px;
+  width: 820px;
+  height: 452px;
+}
+
+.fotos{
+    width: 1440px;
+    height: 500px;
+    display: flex;
+}
+
+.foto_derecha{
+    margin-left: 20px;
+    width: 520px;
+    height: 452px;
+}
+
+.abajo{
+    margin-top: 13px;
+}
+
+.overview{
+    margin-left: 100px;
+}
+
+.overview ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.lakeside{
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.lakeside h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+.calificacion{
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.calificacion span{
+    color: #4F4F4F;
+    font-size: 14px;
+
+}
+
+.texto_debajo_rating{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.div_texto{
+    margin-left: 100px;
+    margin-top: 40px;
+    width: 740px;
+    height: 198px;
+}
+
+.div_texto h3{
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #181818;
+}
+
+.div_texto p{
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4F4F4F;
+    line-height: 140%;
+}

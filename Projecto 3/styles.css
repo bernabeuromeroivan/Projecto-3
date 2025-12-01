@@ -181,6 +181,11 @@ body {
   cursor: pointer;
 }
 
+.buscar a {
+  text-decoration: none;
+  color: white;
+}
+
 .location,
 .user,
 .calendar2,
