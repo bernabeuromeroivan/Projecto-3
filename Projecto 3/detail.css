@@ -47,95 +47,157 @@ body {
   height: 24px;
 }
 
-.foto_izquierda{
+.foto_izquierda {
   margin-left: 100px;
   width: 820px;
   height: 452px;
 }
 
-.fotos{
-    width: 1440px;
-    height: 500px;
-    display: flex;
+.fotos {
+  width: 1440px;
+  height: 500px;
+  display: flex;
 }
 
-.foto_derecha{
-    margin-left: 20px;
-    width: 520px;
-    height: 452px;
+.foto_derecha {
+  margin-left: 20px;
+  width: 520px;
+  height: 452px;
 }
 
-.abajo{
-    margin-top: 13px;
+.abajo {
+  margin-top: 13px;
 }
 
-.overview{
-    margin-left: 100px;
+.overview {
+  margin-left: 100px;
 }
 
-.overview ul{
-    display: flex;
-    gap: 40px;
-    list-style: none;
-    color: #333333;
-    font-size: 16px;
-    font-weight: 400;
+.overview ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-.lakeside{
-    margin-left: 100px;
-    margin-top: 30px;
+.lakeside {
+  margin-left: 100px;
+  margin-top: 30px;
 }
 
-.lakeside h2{
-    font-size: 30px;
-    font-weight: 600;
-    color: #1A1A1A;
+.lakeside h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #1a1a1a;
 }
 
-.calificacion{
-    margin-top: 15px;
-    gap: 10px;
+.calificacion {
+  margin-top: 15px;
+  gap: 10px;
 }
 
-.rating{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.calificacion span{
-    color: #4F4F4F;
-    font-size: 14px;
-
+.calificacion span {
+  color: #4f4f4f;
+  font-size: 14px;
 }
 
-.texto_debajo_rating{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
+.texto_debajo_rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
-.div_texto{
-    margin-left: 100px;
-    margin-top: 40px;
-    width: 740px;
-    height: 198px;
+.parte_izquierda {
+  width: 810px;
+  display: flex;
+  flex-direction: column;
 }
 
-.div_texto h3{
-    margin-left: 30px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #181818;
+.div_texto {
+  margin-left: 100px;
+  margin-top: 60px;
+  width: 740px;
+  height: 198px;
 }
 
-.div_texto p{
-    margin-left: 30px;
-    margin-top: 20px;
-    font-size: 16px;
-    font-weight: 400;
-    color: #4F4F4F;
-    line-height: 140%;
+.div_texto h3 {
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #181818;
+}
+
+.general {
+  display: flex;
+}
+
+.div_texto p {
+  margin-left: 30px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #4f4f4f;
+  line-height: 140%;
+}
+
+.parte_derecha {
+  display: flex;
+  flex-direction: column;
+  margin-left: 130px;
+}
+
+.facilities {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.wifi {
+  margin-left: 30px;
+  list-style: none;
+  line-height: 40px;
+}
+
+.free {
+  display: flex;
+  gap: 10px;
+  color: #4f4f4f;
+}
+
+.facility {
+  display: flex;
+  gap: 100px;
+}
+
+.mapa {
+  margin-top: 70px;
+  width: 400px;
+  height: 240px;
+  margin-bottom: 40px;
+}
+
+.lugares {
+  gap: 10px;
+  color: #4f4f4f;
+  list-style: none;
+}
+
+.ubicaciones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.ubicaciones div {
+  display: flex;
+  gap: 10px;
 }
