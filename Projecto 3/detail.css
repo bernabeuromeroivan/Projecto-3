@@ -12,7 +12,7 @@ body {
 .container {
   width: 1440px;
   height: 2470px;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
 }
 
 .encabezado {
@@ -58,7 +58,7 @@ body {
   width: 1440px;
   height: 500px;
   display: flex;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .foto_derecha {
@@ -208,7 +208,7 @@ body {
   gap: 10px;
 }
 
-.rooms{
+.rooms {
   margin-left: 100px;
   margin-top: 50px;
 }
@@ -226,15 +226,29 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
-  letter-spacing: 2%;
   background-color: #ffffff;
   box-shadow: 0px 4px 37px 0px #00000026;
+  margin-top: 30px;
   position: relative;
-  bottom: 30px;
+}
+
+.user {
+  position: absolute;
+  left: 685px;
+}
+
+.calendar1 {
+  position: absolute;
+  left: 25px;
+}
+
+.calendar2 {
+  position: absolute;
+  left: 360px;
 }
 
 .where {
-  width: 260px;
+  width: 320px;
   height: 43px;
   border-radius: 4px;
   gap: 10px;
@@ -245,7 +259,7 @@ body {
 }
 
 .date {
-  width: 170px;
+  width: 320px;
   height: 43px;
   border-radius: 4px;
   gap: 10px;
@@ -256,18 +270,7 @@ body {
 }
 
 .date_final {
-  width: 170px;
-  height: 43px;
-  border-radius: 4px;
-  gap: 10px;
-  background-color: #f2f2f2;
-  border: none;
-  padding-left: 40px;
-  box-sizing: border-box;
-}
-
-.users {
-  width: 210px;
+  width: 320px;
   height: 43px;
   border-radius: 4px;
   gap: 10px;
@@ -278,7 +281,7 @@ body {
 }
 
 .buscar {
-  width: 148px;
+  width: 220px;
   height: 44px;
   background-color: #2f80ed;
   color: #ffffff;
@@ -291,38 +294,6 @@ body {
   font-size: 15px;
 }
 
-.location,
-.user,
-.calendar2,
-.calendar1 {
-  width: 20px;
-  height: 20px;
-}
-
-.user {
-  position: absolute;
-  left: 660px;
-}
-
-.location {
-  position: absolute;
-  left: 30px;
-}
-
-.calendar1 {
-  position: absolute;
-  left: 300px;
-}
-
-.calendar2 {
-  position: absolute;
-  left: 480px;
-}
-
-.search h3 {
-  font-size: 16px;
-}
-
 .search {
   margin-top: 80px;
   padding: 30px;
@@ -331,4 +302,163 @@ body {
   background-color: #f2f2f2;
   margin-left: 100px;
   border-radius: 6px;
+}
+
+.fondo_azul {
+  width: 400px;
+  height: 340px;
+  margin-left: 100px;
+  background: linear-gradient(180deg, #4796ff 0%, #2366bf 100%);
+  border-radius: 6px;
+}
+
+.place {
+  margin-top: 60px;
+  margin-left: 28px;
+}
+
+.fondo_azul p{
+  width: 195px;
+  height: 126px;
+  margin-left: 28px;
+  color: white;
+  font-size: 24px;
+  margin-top: 30px;
+  line-height: 100%;
+}
+
+.azul{
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.persona{
+  width: 177px;
+  height: 291px;
+  margin-left: 130px;
+  margin-top: -220px;
+}
+
+.habitaciones{
+  width: 400px;
+  height: 200px;
+}
+
+.cuartos{
+  width: 400px;
+  height: 432px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.listas{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.cuartos h3{
+  padding-top: 20px;
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #181818;
+}
+
+.cuartos ul{
+  list-style: none;
+  margin-left: 30px;
+  margin-top: 20px;
+  color: #4F4F4F;
+}
+
+.boton_cuartos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton_cuartos button{
+  width: 340px;
+  height: 44px;
+  background-color: #2F80ED;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.texto_fa {
+  margin-top: 50px;
+  margin-left: 100px;
+  background-color: #fcefca;
+  width: 1240px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+
+.texto_fa img {
+  margin-left: 20px;
+}
+
+.texto_fa p {
+  margin-left: 20px;
+  color: #333333;
+}
+
+.texto_fa p a {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.lista_abajo {
+  margin-left: 90px;
+  flex-direction: column;
+  display: flex;
+  margin-top: 50px;
+  list-style: none;
+  line-height: 30px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.lista_abajo img {
+  width: 159px;
+  height: 24px;
+}
+
+.lista_abajo span {
+  width: 197px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.listas_footer {
+  display: flex;
+  gap: 40px;
+}
+
+.lista_abajo a {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+footer {
+  text-align: end;
+  padding-top: 15px;
+  margin-top: 40px;
+  padding-bottom: 15px;
+  background-color: #EBEBEB;
+  padding-right: 300px;
+  font-size: 14px;
+  color: #4f4f4f;
 }
