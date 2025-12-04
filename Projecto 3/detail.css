@@ -12,13 +12,14 @@ body {
 .container {
   width: 1440px;
   height: 2470px;
+  background-color: #F4F4F4;
 }
 
 .encabezado {
   display: flex;
   justify-content: center;
   gap: 280px;
-  padding: 20px;
+  padding: 30px;
   align-items: center;
 }
 
@@ -57,6 +58,7 @@ body {
   width: 1440px;
   height: 500px;
   display: flex;
+  background-color: #FFFFFF;
 }
 
 .foto_derecha {
@@ -125,11 +127,14 @@ body {
 .div_texto {
   margin-left: 100px;
   margin-top: 60px;
-  width: 740px;
-  height: 198px;
+  width: 810px;
+  height: 508px;
+  background-color: white;
+  border-radius: 6px;
 }
 
 .div_texto h3 {
+  padding-top: 20px;
   margin-left: 30px;
   font-size: 18px;
   font-weight: 500;
@@ -147,6 +152,7 @@ body {
   font-weight: 400;
   color: #4f4f4f;
   line-height: 140%;
+  width: 740px;
 }
 
 .parte_derecha {
@@ -156,7 +162,7 @@ body {
 }
 
 .facilities {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 20px;
 }
 
@@ -200,4 +206,129 @@ body {
 .ubicaciones div {
   display: flex;
   gap: 10px;
+}
+
+.rooms{
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1240px;
+  height: 64px;
+  margin: 0 auto;
+  gap: 10px;
+  border-radius: 8px;
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 2%;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 37px 0px #00000026;
+  position: relative;
+  bottom: 30px;
+}
+
+.where {
+  width: 260px;
+  height: 43px;
+  border-radius: 4px;
+  gap: 10px;
+  background-color: #f2f2f2;
+  border: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+.date {
+  width: 170px;
+  height: 43px;
+  border-radius: 4px;
+  gap: 10px;
+  background-color: #f2f2f2;
+  border: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+.date_final {
+  width: 170px;
+  height: 43px;
+  border-radius: 4px;
+  gap: 10px;
+  background-color: #f2f2f2;
+  border: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+.users {
+  width: 210px;
+  height: 43px;
+  border-radius: 4px;
+  gap: 10px;
+  background-color: #f2f2f2;
+  border: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+.buscar {
+  width: 148px;
+  height: 44px;
+  background-color: #2f80ed;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  gap: 10px;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 15px;
+}
+
+.location,
+.user,
+.calendar2,
+.calendar1 {
+  width: 20px;
+  height: 20px;
+}
+
+.user {
+  position: absolute;
+  left: 660px;
+}
+
+.location {
+  position: absolute;
+  left: 30px;
+}
+
+.calendar1 {
+  position: absolute;
+  left: 300px;
+}
+
+.calendar2 {
+  position: absolute;
+  left: 480px;
+}
+
+.search h3 {
+  font-size: 16px;
+}
+
+.search {
+  margin-top: 80px;
+  padding: 30px;
+  width: 295px;
+  height: 80px;
+  background-color: #f2f2f2;
+  margin-left: 100px;
+  border-radius: 6px;
 }
