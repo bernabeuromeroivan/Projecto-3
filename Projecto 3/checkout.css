@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "SF Pro Display";
+}
+
+.container {
+  width: 1440px;
+  height: 2470px;
+  background-color: #f4f4f4;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.foto {
+  width: 44px;
+  height: 44px;
+}
+
+.notificacion {
+  width: 24px;
+  height: 24px;
+}
+
+.general {
+  margin-left: 100px;
+}
+
+.titulo {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 60px;
+}
+
+.texto_fa {
+  margin-top: 30px;
+  background-color: #fcefca;
+  width: 1240px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.texto_fa img {
+  margin-left: 20px;
+}
+
+.texto_fa p {
+  margin-left: 20px;
+  color: #333333;
+}
+
+.texto_fa p a {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.room1 {
+  width: 810px;
+  height: 328px;
+  background-color: #ffffff;
+  margin-top: 30px;
+  border-radius: 6px;
+}
+
+.room1_parte_arriba {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: #ffffff;
+  padding: 20px;
+  background-color: #2f80ed;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.parte_arriba {
+  display: flex;
+  margin-left: 32px;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.etiqueta {
+  display: flex;
+  flex-direction: column;
+}
+
+.parte_arriba label {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #181818;
+}
+
+.parte_abajo {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-left: 32px;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.parte_arriba input {
+  width: 240px;
+  height: 44px;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+.mobil {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobil label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #181818;
+}
+
+.bandera {
+  position: absolute;
+  top: 35px;
+  left: 15px;
+}
+
+.seleccion {
+  display: flex;
+  gap: 20px;
+  width: 150px;
+  height: 44px;
+  border: none;
+  background-color: #f2f2f2;
+  margin-top: 10px;
+  padding-left: 45px;
+}
+
+.vacio input {
+  width: 338px;
+  height: 44px;
+  border: none;
+  margin-top: 25px;
+  background-color: #f2f2f2;
+  padding-left: 10px;
+}
+
+.recuadro {
+  display: flex;
+  margin-left: 32px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.recuadro input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.recuadro span {
+  font-size: 14px;
+  color: #333333;
+}
+
+.pagos {
+  width: 810px;
+  height: 576px;
+  background-color: #ffffff;
+  margin-top: 30px;
+}
+
+.pagos_parte_arriba {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: #ffffff;
+  padding: 20px;
+  background-color: #2f80ed;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.metodos {
+  margin-top: 20px;
+  list-style: none;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.metodos li {
+  padding-bottom: 20px;
+  margin-left: 32px;
+}
+
+.metodos_de_pago {
+  display: flex;
+  margin-top: 30px;
+  gap: 6px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.metodos_de_pago div {
+  width: 60px;
+  height: 40px;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.datos_targeta {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 468px;
+  margin-top: 20px;
+  margin-left: 32px;
+}
+
+.datos_targeta label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #181818;
+}
+
+.datos_targeta input {
+  width: 500px;
+  flex-direction: column;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 44px;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+.anyo {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  width: 150px;
+  height: 42px;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.meses_anyos {
+  display: flex;
+  gap: 20px;
+}
+
+.meses {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  width: 150px;
+  height: 42px;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.seguridad {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.seguridad input {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  height: 44px;
+  border: none;
+  margin-top: 10px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  padding-left: 10px;
+}

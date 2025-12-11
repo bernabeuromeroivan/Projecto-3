@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="checkout.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-pro-display"
+      rel="stylesheet"
+    />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="encabezado">
+          <div class="logo">
+            <img src="imagenes/mydreamplace.svg" alt="Logo" />
+          </div>
+          <div class="icono">
+            <img src="imagenes/notificacion.svg" alt="Notificacion" />
+            <img class="foto" src="imagenes/icono.svg" alt="Icono" />
+          </div>
+        </div>
+      </header>
+      <div class="general">
+        <div>
+          <h1 class="titulo">Secure your reservation</h1>
+        </div>
+        <div class="texto_fa">
+          <img src="imagenes/peligro.svg" alt="Danger" />
+          <p>
+            Check the latest COVID-19 restrictions before you travel.
+            <a href="">Learn more</a>
+          </p>
+        </div>
+        <div>
+          <div class="room1">
+            <div class="room1_parte_arriba">
+              <img src="imagenes/seguridad_user.svg" alt="" />
+              <span>Room 1 </span>
+              <span>2 adults, 1 double bed and 1 twin bed, Non-smoking</span>
+            </div>
+            <div class="room1_forms">
+              <div class="parte_arriba">
+                <div class="etiqueta">
+                  <label for="">First name</label>
+                  <input type="text" />
+                </div>
+                <div class="etiqueta">
+                  <label for="">Last name</label>
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="parte_abajo">
+                <div class="mobil">
+                  <label for="">Mobile number</label>
+                  <img
+                    src="imagenes/bandera_australia.svg"
+                    alt=""
+                    class="bandera"
+                  />
+                  <select name="" id="" class="seleccion">
+                    <option value="">+61</option>
+                  </select>
+                </div>
+                <div class="vacio">
+                  <input type="tel" />
+                </div>
+              </div>
+            </div>
+            <div class="recuadro">
+              <input type="checkbox" />
+              <span>Receive text alerts about this trip.</span>
+            </div>
+          </div>
+          <div class="pagos">
+            <div>
+              <div class="pagos_parte_arriba">
+                <img src="imagenes/targeta.svg" alt="" />
+                <span>Payment options</span>
+              </div>
+              <ul class="metodos">
+                <li>Debit/Credit Card</li>
+                <li>Paypal</li>
+                <li>Bank transfer</li>
+              </ul>
+            </div>
+            <div class="metodos_de_pago">
+              <div>
+                <img src="imagenes/mastercard.svg" alt="" />
+              </div>
+              <div>
+                <img src="imagenes/visa.svg" alt="" />
+              </div>
+              <div>
+                <img src="imagenes/express.svg" alt="" />
+              </div>
+              <div>
+                <img src="imagenes/discover.svg" alt="" />
+              </div>
+            </div>
+            <div class="datos_targeta">
+              <form action="">
+                <label for="">Name on card</label>
+                <input type="text" required max="16" />
+                <label for="">Debit/Credit card number</label>
+                <input type="text" required max="16" />
+                <label for="">Expiration Date</label>
+                <div class="meses_anyos">
+                  <select name="" id="" class="anyo">
+                    <option value="" selected>Month</option>
+                    <option value="">January</option>
+                    <option value="">February</option>
+                    <option value="">March</option>
+                    <option value="">April</option>
+                    <option value="">May</option>
+                    <option value="">June</option>
+                    <option value="">July</option>
+                    <option value="">August</option>
+                    <option value="">September</option>
+                    <option value="">October</option>
+                    <option value="">November</option>
+                    <option value="">December</option>
+                  </select>
+                  <select name="" id="" class="meses">
+                    <option value="" selected>Year</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                  </select>
+                </div>
+                <div class="seguridad">
+                  <div class="etiqueta">
+                    <label for="">Security Code</label>
+                    <input type="text" />
+                  </div>
+                  <div class="etiqueta">
+                    <label for="">Billing Zip code</label>
+                    <input type="text" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
