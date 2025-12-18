@@ -532,3 +532,12 @@ body {
   font-size: 15px;
   margin-left: 6px;
 }
+
+.tick_verde{
+    display: flex;
+    align-items: center;
+}
+
+.tick_verde img{
+    margin-left: 10px;
+}
