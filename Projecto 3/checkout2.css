@@ -11,7 +11,6 @@ body {
 
 .container {
   width: 1440px;
-  height: 2470px;
   background-color: #f4f4f4;
 }
 
@@ -425,7 +424,7 @@ body {
   margin-top: 20px;
   width: 400px;
   height: 338px;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
 }
 
 .fondo_verde {
@@ -450,31 +449,31 @@ body {
   border-radius: 6px;
 }
 
-.detalle_precio{
+.detalle_precio {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 14px;
-  color: #4F4F4F;
+  color: #4f4f4f;
   font-weight: 400;
 }
 
-.detalle_precio2{
+.detalle_precio2 {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 14px;
-  color: #4F4F4F;
+  color: #4f4f4f;
   font-weight: 400;
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid #e0e0e0;
   padding-bottom: 20px;
 }
 
-.total{
+.total {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
@@ -485,59 +484,59 @@ body {
   font-weight: 500;
 }
 
-.dinero_total{
+.dinero_total {
   font-size: 20px;
   font-weight: 600;
 }
 
-.cupon{
+.cupon {
   margin-top: 15px;
   margin-left: 18px;
   font-weight: 400;
   font-size: 14px;
-  color: #2F80ED;
+  color: #2f80ed;
   cursor: pointer;
 }
 
-.codigo{
+.codigo {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
   padding-left: 20px;
 }
 
-.codigo input{
+.codigo input {
   width: 226px;
   height: 44px;
   margin-top: 10px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: none;
 }
 
-.codigo label{
+.codigo label {
   font-size: 14px;
   font-weight: 500;
   color: #181818;
   margin-top: 15px;
 }
 
-.boton_cupon{
+.boton_cupon {
   width: 132px;
   height: 44px;
   background-color: #333333;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 6px;
   border: none;
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-size: 15px;
   margin-left: 6px;
 }
 
-.tick_verde{
-    display: flex;
-    align-items: center;
+.tick_verde {
+  display: flex;
+  align-items: center;
 }
 
-.tick_verde img{
-    margin-left: 10px;
+.tick_verde img {
+  margin-left: 10px;
 }
