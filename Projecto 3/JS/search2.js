@@ -1,9 +1,11 @@
 import { form } from "./search.js";
 import { budgetRanges } from "./search.js";
+import { popularFilters } from "./search.js";
+import { activities } from "./search.js";
 
 const formulario = document.querySelector("#formulario");
 
-formulario.innerHTML = ""; // limpia el contenido
+formulario.innerHTML = ""; 
 
 for (let i = 0; i < form.length; i++) {
   formulario.innerHTML += `
@@ -23,13 +25,10 @@ for (let i = 0; i < form.length; i++) {
   `;
 }
 
-// Seleccionamos el contenedor donde irá la información
 const rangoPrecio = document.querySelector('.rango_precio');
 
-// Limpiamos contenido previo (opcional)
 rangoPrecio.innerHTML = "";
 
-// Creamos las listas
 let htmlCheckboxes = "<ul>";
 let htmlCounts = "<ul>";
 
@@ -47,5 +46,50 @@ for (let i = 0; i < budgetRanges.length; i++) {
 htmlCheckboxes += "</ul>";
 htmlCounts += "</ul>";
 
-// Insertamos las listas en el contenedor
 rangoPrecio.innerHTML = htmlCheckboxes + htmlCounts;
+
+const popularFilter = document.querySelector("#filters");
+
+popularFilter.innerHTML = "";
+
+let htmlCheckbox = "<ul>";
+let htmlCount = "<ul>";
+
+for (let i = 0; i < popularFilters.length; i++) {
+  htmlCheckbox += `
+    <li>
+      <input type="checkbox" id="remember" name="budget" />
+      <span>${popularFilters[i].label}</span>
+    </li>
+  `;
+
+  htmlCount += `<li>${popularFilters[i].count}</li>`;
+}
+
+htmlCheckbox += "</ul>";
+htmlCount += "</ul>";
+
+popularFilter.innerHTML = htmlCheckbox + htmlCount;
+
+const actividades = document.querySelector("#actividades");
+
+actividades.innerHTML = "";
+
+let Checkboxs = "<ul>";
+let Counts = "<ul>";
+
+for (let i = 0; i < activities.length; i++) {
+  Checkboxs += `
+    <li>
+      <input type="checkbox" id="remember" name="budget" />
+      <span>${activities[i].label}</span>
+    </li>
+  `;
+
+  Counts += `<li>${activities[i].count}</li>`;
+}
+
+Checkboxs += "</ul>";
+Counts += "</ul>";
+
+actividades.innerHTML = Checkboxs + Counts;
