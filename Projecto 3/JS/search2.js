@@ -2,10 +2,11 @@ import { form } from "./search.js";
 import { budgetRanges } from "./search.js";
 import { popularFilters } from "./search.js";
 import { activities } from "./search.js";
+import { results } from "./search.js";
 
 const formulario = document.querySelector("#formulario");
 
-formulario.innerHTML = ""; 
+formulario.innerHTML = "";
 
 for (let i = 0; i < form.length; i++) {
   formulario.innerHTML += `
@@ -25,7 +26,7 @@ for (let i = 0; i < form.length; i++) {
   `;
 }
 
-const rangoPrecio = document.querySelector('.rango_precio');
+const rangoPrecio = document.querySelector(".rango_precio");
 
 rangoPrecio.innerHTML = "";
 
@@ -93,3 +94,46 @@ Checkboxs += "</ul>";
 Counts += "</ul>";
 
 actividades.innerHTML = Checkboxs + Counts;
+
+const resultados = document.querySelector("#hoteles");
+
+resultados.innerHTML = "";
+
+for (let i = 0; i < results.length; i++) {
+  resultados.innerHTML += `
+    <div class="hoteles">
+      <div class="contenido">
+        <div class="imagen_contenido">
+          <img src="${results[i].imagen}" alt="" />
+        </div>
+        <div class="parte_izquierda_recuadro">
+          <div class="texto_contenido">
+              <h3>${results[i].name}</h3>
+            <div class="calificacion">
+                <img src="imagenes/rating.svg" alt="" />
+              <span>${results[i].rating} (${results[i].reviewsCount} reviews)</span>
+            </div>
+            <div class="texto_dentro_recuadro">
+              <p>${results[i].description}</p>
+              <button>See availability</button>
+            </div>
+          </div>
+        </div>
+        <div class="parte_derecha_recuadro">
+          <div class="parte_derecha_fondo_rojo">
+            <p>${results[i].badge}</p>
+          </div>
+          <div class="parte_derecha_abajo_derecha">
+            <p class="por_ciento">5% off</p>
+            <p class="habitaciones">1 room 2 days</p>
+              <div class="precio">
+                <p class="subrayado">${results[i].oldPrice}</p>
+                <p class="original">${results[i].pricePerNight}</p>
+              </div>
+                <p class="include">Includes taxes and fees</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+}
