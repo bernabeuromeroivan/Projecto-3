@@ -101,7 +101,6 @@ resultados.innerHTML = "";
 
 for (let i = 0; i < results.length; i++) {
   resultados.innerHTML += `
-    <div class="hoteles">
       <div class="contenido">
         <div class="imagen_contenido">
           <img src="${results[i].imagen}" alt="" />
@@ -134,6 +133,5 @@ for (let i = 0; i < results.length; i++) {
           </div>
         </div>
       </div>
-    </div>
   `;
 }

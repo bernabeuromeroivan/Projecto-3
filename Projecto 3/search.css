@@ -14,6 +14,10 @@ body {
 }
 
 .general {
+  display: block;
+}
+
+.content {
   display: flex;
 }
 
