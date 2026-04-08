@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Trips</title>
     <link rel="stylesheet" href="my_trips.css" />
     <link
       href="https://fonts.cdnfonts.com/css/sf-pro-display"
@@ -26,59 +26,13 @@
       <div>
         <h1 class="titulo">My Trips</h1>
       </div>
-      <div class="contenido">
+      <div class="contenido" id="contenido">
         <div class="imagen_contenido">
           <img src="imagenes/hotel1.png" alt="" />
         </div>
-        <div class="parte_izquierda_recuadro">
-          <div class="texto_contenido">
-            <h3>Lakeside Motel Warefront</h3>
-            <div class="calificacion">
-              <img src="imagenes/rating.svg" alt="" />
-              <span>4.5 (1200 Reviews)</span>
-            </div>
-            <div class="lista">
-              <ul>
-                <li class="rojo">Non refundable</li>
-                <li>Check in: Sunday, March 18, 2022</li>
-                <li>Check out: Tuesday, March 20, 2022</li>
-                <li>2 night stay</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="parte_derecha_recuadro">
-          <p class="habitaciones">1 room 2 days</p>
-          <div class="precio">
-            <p class="subrayado">$150</p>
-            <p class="original">$130</p>
-          </div>
-          <span>Includes taxes and fees</span>
-          <button class="boton">View trip details</button>
-        </div>
       </div>
       <h2 class="history">Based on your history</h2>
-      <div class="imagenes_debajo">
-        <div class="australia">
-          <img src="imagenes/australia.png" alt="Imagen1" />
-          <h3>Australia</h3>
-          <p>2246 properties</p>
-        </div>
-        <div class="japan">
-          <img src="imagenes/japan.png" alt="Imagen2" />
-          <h3>Japan</h3>
-          <p>1278 properties</p>
-        </div>
-        <div class="new">
-          <img src="imagenes/nueva_zelanda.png" alt="Imagen3" />
-          <h3>New Zealand</h3>
-          <p>480 properties</p>
-        </div>
-        <div class="grecce">
-          <img src="imagenes/grecia.png" alt="Imagen4" />
-          <h3 class="grecce">Greece</h3>
-          <p>320 properties</p>
-        </div>
+      <div class="imagenes_debajo" id="imagenes_debajo">
       </div>
       <div class="texto_fa">
         <img src="imagenes/peligro.svg" alt="Danger" />
@@ -130,5 +84,6 @@
         <p>&#169;​ my Dream Place 2022</p>
       </footer>
     </div>
+    <script src="JS/trips2.js" type="module"></script>
   </body>
 </html>
