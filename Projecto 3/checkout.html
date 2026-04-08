@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -40,13 +40,7 @@
           <div class="parte_izquierda">
             <div class="general_form">
               <div class="room1">
-                <div class="room1_parte_arriba">
-                  <img src="imagenes/seguridad_user.svg" alt="" />
-                  <span>Room 1 </span>
-                  <span
-                    >2 adults, 1 double bed and 1 twin bed, Non-smoking</span
-                  >
-                </div>
+                <div class="room1_parte_arriba" id="room1"></div>
                 <div class="room1_forms">
                   <div class="parte_arriba">
                     <div class="etiqueta">
@@ -157,22 +151,8 @@
                     Important information about your booking
                   </h3>
                 </div>
-                <div class="fondo_amarillo_contenido">
-                  <div class="lista">
-                    <ol>
-                      <li>
-                        This rate is non-refundable. If you change or cancel
-                        your booking you will not get a refund or credit to use
-                        for a future stay.
-                      </li>
-                      <li>Stay extensions will require a new reservation.</li>
-                      <li>Front desk staff will greet guests on arrival</li>
-                      <li>
-                        No refunds will be issued for late check-in or early
-                        check-out.
-                      </li>
-                    </ol>
-                  </div>
+                <div class="fondo_amarillo_contenido" id="amarillo">
+                  <div class="lista" id="lista"></div>
                   <div class="texto">
                     <p>
                       By clicking the button below, I acknowledge that I have
@@ -196,57 +176,10 @@
               </div>
             </div>
           </div>
-          <div class="parte_derecha">
-            <div class="parte_derecha_imagen">
-              <img src="imagenes/motel.png" alt="" />
-            </div>
-            <div class="parte_derecha_texto">
-              <h3 class="subtitulo">Lakeside Motel Warefront</h3>
-              <div class="calificacion">
-                <img src="imagenes/rating.svg" alt="" />
-                <span>4.5 (1200 Reviews)</span>
-              </div>
-              <div>
-                <ul>
-                  <li class="rojo">Non refundable</li>
-                  <li>Check in: Sunday, March 18, 2022</li>
-                  <li>Check out: Tuesday, March 20, 2022</li>
-                  <li>2 night stay</li>
-                </ul>
-              </div>
-            </div>
-            <div class="texto_titulo_verde">
-              <div class="fondo_verde">
-                <h3>Price Details</h3>
-              </div>
-              <div class="contenido_texto_titulo_fondo_verde">
-                <div class="detalle_precio">
-                  <span>2 nights x $120.00</span>
-                  <span>$240.00</span>
-                </div>
-                <div class="detalle_precio2">
-                  <span>Taxes and fees</span>
-                  <span>$35.00</span>
-                </div>
-                <div class="total">
-                  <span>Total</span>
-                  <span class="dinero_total">$130</span>
-                </div>
-                <span class="cupon"
-                  >Use a coupon, credit or promotional code</span
-                >
-                <form action="" class="codigo">
-                  <label for="">Coupon code</label>
-                  <div>
-                    <input type="text" name="" id="" />
-                    <button class="boton_cupon">Apply Coupon</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
+          <div class="parte_derecha" id="parte_derecha"></div>
         </div>
       </div>
     </div>
+    <script src="JS/checkout.js" type="module"></script>
   </body>
 </html>
