@@ -18,5 +18,23 @@ async function cargarTodo() {
         `;
     }
   }
+  
+  const resInspiracion = await client.from("inspiracion").select("*");
+
+  if (resInspiracion.data) {
+    const inspiData = resInspiracion.data;
+    const inspiContenedor = document.querySelector("#inspiracion");
+    inspiContenedor.innerHTML = "";
+
+    for (let i = 0; i < inspiData.length; i++) {
+      inspiContenedor.innerHTML += `
+        <div class="hoteles">
+          <img src="${inspiData[i].imagen}" style="width: 400px; height: 280px; border-radius: 8px;">
+          <h3>${inspiData[i].nombre}</h3>
+          <p>${inspiData[i].texto}</p>
+        </div>
+        `;
+    }
+  }
 }
 cargarTodo();
