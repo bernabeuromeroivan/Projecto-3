@@ -1,33 +1,58 @@
-import { hoteles } from "./data.js";
-import { popular } from "./data.js";
-import { inspiracion } from "./data.js";
+import { client } from "./data.js";
 
-const hotel = document.querySelector("#hoteles");
-for (let i=0;i<hoteles.length;i++) {
-  hotel.innerHTML += `
-    <div class="australia">
-        <img src="${hoteles[i].imagen}" alt="Imagen1" style="width: 295px; height: 220px; border-radius: 8px;">
-        <h3>${hoteles[i].nombre}</h3>
-        <p>${hoteles[i].propiedades} propiedades</p>
-    </div>`;
-}
+async function cargarTodo() {
+  const resHoteles = await client.from("hoteles").select("*");
 
-const populares = document.querySelector("#popular");
-for (let i=0;i<popular.length;i++) {
-  populares.innerHTML += `
-    <div class="hoteles">
-        <img src="${popular[i].imagen}" alt="Imagen1" style="width: 295px; height: 300px; border-radius: 8px;">
-        <h3>${popular[i].nombre}</h3>
-        <p>${popular[i].propiedades} properties</p>
-    </div>`;
-}
+  if (resHoteles.data) {
+    const hotelesData = resHoteles.data;
+    const hotelContenedor = document.querySelector("#hoteles");
+    hotelContenedor.innerHTML = "";
 
-const inspiration = document.querySelector("#inspiracion");
-for (let i=0;i<inspiracion.length;i++) {
-  inspiration.innerHTML += `
-    <div class="hoteles">
-        <img src="${inspiracion[i].imagen}" alt="Imagen1" style="width: 400px; height: 280px; border-radius: 8px;">
-        <h3>${inspiracion[i].nombre}</h3>
-        <p>${inspiracion[i].texto}</p>
-    </div>`;
+    for (let i = 0; i < hotelesData.length; i++) {
+      hotelContenedor.innerHTML += `
+        <div class="australia">
+          <img src="${hotelesData[i].imagen}" style="width: 295px; height: 220px; border-radius: 8px;">
+          <h3>${hotelesData[i].nombre}</h3>
+          <p>${hotelesData[i].propiedades} propiedades</p>
+        </div>
+        `;
+    }
+  }
+
+  const resInspiracion = await client.from("inspiracion").select("*");
+
+  if (resInspiracion.data) {
+    const inspiData = resInspiracion.data;
+    const inspiContenedor = document.querySelector("#inspiracion");
+    inspiContenedor.innerHTML = "";
+
+    for (let i = 0; i < inspiData.length; i++) {
+      inspiContenedor.innerHTML += `
+        <div class="hoteles">
+          <img src="${inspiData[i].imagen}" style="width: 400px; height: 280px; border-radius: 8px;">
+          <h3>${inspiData[i].nombre}</h3>
+          <p>${inspiData[i].texto}</p>
+        </div>
+        `;
+    }
+  }
+
+  const resPopular = await client.from("popular").select("*");
+
+  if (resPopular.data) {
+    const popularData = resPopular.data;
+    const popularContenedor = document.querySelector("#popular");
+    popularContenedor.innerHTML = "";
+
+    for (let i = 0; i < popularData.length; i++) {
+      popularContenedor.innerHTML += `
+        <div class="hoteles">
+          <img src="${popularData[i].imagen}" style="width: 295px; height: 300px; border-radius: 8px;">
+          <h3>${popularData[i].nombre}</h3>
+          <p>${popularData[i].propiedades} properties</p>
+        </div>
+        `;
+    }
+  }
 }
+cargarTodo();
