@@ -66,6 +66,23 @@ async function cargarDatos() {
     popularFilterCont.innerHTML = htmlCheckbox + "</ul>" + htmlCount + "</ul>";
   }
 
+  const resActivities = await client.from("activities").select("*");
+  const actividadesContenedor = document.querySelector("#actividades");
+  if (resActivities.data) {
+    const activitiesData = resActivities.data;
+    let Checkboxs = "<ul>";
+    let Counts = "<ul>";
+    for (let i = 0; i < activitiesData.length; i++) {
+      Checkboxs += `
+        <li>
+          <input type="checkbox" name="activities" />
+          <span>${activitiesData[i].label}</span>
+        </li>`;
+      Counts += `<li>${activitiesData[i].count}</li>`;
+    }
+    actividadesContenedor.innerHTML = Checkboxs + "</ul>" + Counts + "</ul>";
+  }
+
   const resHoteles = await client.from("results").select("*");
   const hotelesContenedor = document.querySelector("#hoteles");
 
