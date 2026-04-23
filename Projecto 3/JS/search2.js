@@ -31,6 +31,41 @@ async function cargarDatos() {
       }
     }
   }
+
+  const resBudget = await client.from("budgetRanges").select("*");
+  const rangoPrecio = document.querySelector(".rango_precio");
+  if (resBudget.data) {
+    const budgetRanges = resBudget.data;
+    let htmlCheckboxes = "<ul>";
+    let htmlCounts = "<ul>";
+    for (let i = 0; i < budgetRanges.length; i++) {
+      htmlCheckboxes += `
+        <li>
+          <input type="checkbox" name="budget" />
+          <span>$ ${budgetRanges[i].min} - $ ${budgetRanges[i].max}</span>
+        </li>`;
+      htmlCounts += `<li>${budgetRanges[i].count}</li>`;
+    }
+    rangoPrecio.innerHTML = htmlCheckboxes + "</ul>" + htmlCounts + "</ul>";
+  }
+
+  const resPopular = await client.from("popularFilters").select("*");
+  const popularFilterCont = document.querySelector("#filters");
+  if (resPopular.data) {
+    const popularFilters = resPopular.data;
+    let htmlCheckbox = "<ul>";
+    let htmlCount = "<ul>";
+    for (let i = 0; i < popularFilters.length; i++) {
+      htmlCheckbox += `
+        <li>
+          <input type="checkbox" name="popular" />
+          <span>${popularFilters[i].label}</span>
+        </li>`;
+      htmlCount += `<li>${popularFilters[i].count}</li>`;
+    }
+    popularFilterCont.innerHTML = htmlCheckbox + "</ul>" + htmlCount + "</ul>";
+  }
+
   const resHoteles = await client.from("results").select("*");
   const hotelesContenedor = document.querySelector("#hoteles");
 
