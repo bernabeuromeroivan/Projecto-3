@@ -18,7 +18,7 @@ async function cargarTodo() {
         `;
     }
   }
-  
+
   const resInspiracion = await client.from("inspiracion").select("*");
 
   if (resInspiracion.data) {
@@ -32,6 +32,24 @@ async function cargarTodo() {
           <img src="${inspiData[i].imagen}" style="width: 400px; height: 280px; border-radius: 8px;">
           <h3>${inspiData[i].nombre}</h3>
           <p>${inspiData[i].texto}</p>
+        </div>
+        `;
+    }
+  }
+
+  const resPopular = await client.from("popular").select("*");
+
+  if (resPopular.data) {
+    const popularData = resPopular.data;
+    const popularContenedor = document.querySelector("#popular");
+    popularContenedor.innerHTML = "";
+
+    for (let i = 0; i < popularData.length; i++) {
+      popularContenedor.innerHTML += `
+        <div class="hoteles">
+          <img src="${popularData[i].imagen}" style="width: 295px; height: 300px; border-radius: 8px;">
+          <h3>${popularData[i].nombre}</h3>
+          <p>${popularData[i].propiedades} properties</p>
         </div>
         `;
     }
