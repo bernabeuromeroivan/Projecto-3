@@ -11,8 +11,7 @@ async function cargarDatos() {
     
     if (formContenedor) {
       formContenedor.innerHTML = "";
-
-      // Usamos el primer registro [0] para rellenar la barra de búsqueda
+      
       for (let i = 0; i < formData.length; i++) {
         formContenedor.innerHTML += `
           <div class="formulario">
