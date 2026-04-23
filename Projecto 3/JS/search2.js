@@ -1,7 +1,6 @@
 import { client } from "./data.js";
 
 async function cargarDatos() {
-
   const resForm = await client.from("form").select("*");
 
   if (resForm.data) {
@@ -41,16 +40,15 @@ async function cargarDatos() {
 
     for (let i = 0; i < hotelesData.length; i++) {
       hotelesContenedor.innerHTML += `
-        <div class="contenido">
-          
-          <div class="imagen_contenido">
-            <img src="${hotelesData[i].imagen}">
-          </div>
-          
-          <div class="parte_central">
-            <h3>${hotelesData[i].name}</h3>
+      <div class="contenido">
+        <div class="imagen_contenido">
+          <img src="${hotelesData[i].imagen}" alt="" />
+        </div>
+        <div class="parte_izquierda_recuadro">
+          <div class="texto_contenido">
+              <h3>${hotelesData[i].name}</h3>
             <div class="calificacion">
-              <img src="imagenes/estrellas.svg">
+                <img src="imagenes/rating.svg" alt="" />
               <span>${hotelesData[i].rating} (${hotelesData[i].reviewsCount} reviews)</span>
             </div>
             <div class="texto_dentro_recuadro">
@@ -58,23 +56,23 @@ async function cargarDatos() {
               <button>See availability</button>
             </div>
           </div>
-
-          <div class="parte_derecha_recuadro">
-            ${hotelesData[i].badge ? `<div class="parte_derecha_fondo_rojo">${hotelesData[i].badge}</div>` : ""}
-            
-            <div class="por_ciento">5% off</div>
-            
-            <p class="habitaciones">1 room 2 nights</p>
-            
-            <div class="precio">
-              <span class="subrayado">${hotelesData[i].oldPrice || ""}</span>
-              <span class="original"><strong>$${hotelesData[i].pricePerNight}</strong></span>
-            </div>
-            
-            <p class="include">Includes taxes and fees</p>
+        </div>
+        <div class="parte_derecha_recuadro">
+          <div class="parte_derecha_fondo_rojo">
+            <p>${hotelesData[i].badge}</p>
           </div>
-
-        </div>`;
+          <div class="parte_derecha_abajo_derecha">
+            <p class="por_ciento">5% off</p>
+            <p class="habitaciones">1 room 2 days</p>
+              <div class="precio">
+                <p class="subrayado">${hotelesData[i].oldPrice}</p>
+                <p class="original">${hotelesData[i].pricePerNight}</p>
+              </div>
+                <p class="include">Includes taxes and fees</p>
+          </div>
+        </div>
+      </div>
+  `;
     }
   }
 }
