@@ -51,7 +51,7 @@ parte_derecha.innerHTML = `
                 <label for="">Coupon code</label>
                 <div>
                     <input type="text" name="" id="" />
-                    <button class="boton_cupo">Apply Coupon</button>
+                    <button class="boton_cupon">Apply Coupon</button>
                 </div>
             </form>
         </div>
