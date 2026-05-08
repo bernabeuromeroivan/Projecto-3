@@ -1,4 +1,4 @@
-import { client } from "./data.js";
+import { client } from "./search.js";
 
 async function cargarDatos() {
   const resForm = await client.from("form").select("*");
