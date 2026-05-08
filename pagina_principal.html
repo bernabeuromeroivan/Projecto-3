@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="pagina_principal.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-pro-display"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="encabezado">
+          <div class="logo">
+            <img src="imagenes/mydreamplace.svg" alt="Logo" />
+          </div>
+          <div>
+            <ul class="lista">
+              <li><a href="">Home</a></li>
+              <li><a href="">Discover</a></li>
+              <li><a href="">Activities</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="botones">
+            <button class="registrar">
+              <a href="registrar.html">Register</a>
+            </button>
+            <button class="inicio_sesion">
+              <a href="sign_in.html">Sign In</a>
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="imagen_texto">
+        <img src="imagenes/sydney.png" alt="imagen_texto" />
+        <h2 class="titulo_dentro">Enjoy Your Dream Vacation</h2>
+        <p class="texto_dentro">
+          Plan and book our perfect trip with expert advice, travel tips,
+          destination information and inspiration from us
+        </p>
+      </div>
+      <div class="formulario">
+        <input
+          type="text"
+          placeholder="Where are you going?"
+          class="where"
+        /><img src="imagenes/location.svg" alt="location" class="location" />
+        <input type="text" placeholder="Check in date" class="date" /><img
+          src="imagenes/calendar.png"
+          alt="calendar1"
+          class="calendar1"
+        />
+        <input
+          type="text"
+          placeholder="Check out date"
+          class="date_final"
+        /><img src="imagenes/calendar.png" alt="calendar2" class="calendar2" />
+        <input type="number" placeholder="Guests" class="users" /><img
+          src="imagenes/user.svg"
+          alt="Usuario"
+          class="user"
+        />
+        <button class="buscar"><a href="search.html">Search</a></button>
+      </div>
+      <div class="texto_fa">
+        <img src="imagenes/peligro.svg" alt="Danger" />
+        <p>
+          Check the latest COVID-19 restrictions before you travel.
+          <a href="">Learn more</a>
+        </p>
+      </div>
+      <div class="enjoy">
+        <div class="texto_enjoy">
+          <h2>Enjoy your dream vacation</h2>
+          <p>
+            Plan and book our perfect trip with expert advice, travel tips,
+            destination information and inspiration from us
+          </p>
+        </div>
+        <div class="imagenes_debajo" id="hoteles"></div>
+      </div>
+      <div class="inspiration">
+        <h2>Get inspiration for your next trip</h2>
+      </div>
+      <div class="inspiration_img" id="inspiracion"></div>
+      <div class="gen_popular">
+        <div class="popular">
+          <h2>Popular hotels</h2>
+        </div>
+        <div class="img_popular" id="popular"></div>
+      </div>
+      <div class="playa_mobil">
+        <h2>
+          Download the mobile application for bonus coupons and travel codes
+        </h2>
+        <button class="boton_playa">Download mobile app</button>
+        <img class="mano" src="imagenes/mano_mobil.png" alt="" />
+      </div>
+      <div class="sub_footer">
+        <h2>Explore the world with My Dream place</h2>
+        <p>Discover new places and experiences</p>
+      </div>
+      <div class="listas_footer">
+        <div class="lista_abajo">
+          <img src="imagenes/mydreamplace.svg" alt="" />
+          <span>Your next goto companion for travel</span>
+        </div>
+        <div class="lista_abajo">
+          <h3>Company</h3>
+          <li>About</li>
+          <li>Jobs</li>
+          <li>Newsroom</li>
+          <li>Advertising</li>
+          <li>Contact us</li>
+        </div>
+        <div class="lista_abajo">
+          <h3>Explore</h3>
+          <li>Australia</li>
+          <li>New Zealand</li>
+          <li>United States America (USA)</li>
+          <li>Greece</li>
+          <li>Maldives</li>
+          <li>Singapore</li>
+          <a href="">See more</a>
+        </div>
+        <div class="lista_abajo">
+          <h3>Terms and Policies</h3>
+          <p>Privacy Policy</p>
+          <p>Terms of use</p>
+          <p>Acessibility</p>
+          <p>Reward system policy</p>
+        </div>
+        <div class="lista_abajo">
+          <h3>Help</h3>
+          <p>Support</p>
+          <p>Cancel your bookings</p>
+          <p>Use Coupon</p>
+          <p>Refund Policies</p>
+          <p>International Travel Documents</p>
+        </div>
+      </div>
+      <footer>
+        <p>&#169;​ my Dream Place 2022</p>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+      <script src="JS/main.js" type="module"></script>
+    </div>
+  </body>
+</html>
